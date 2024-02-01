@@ -16,4 +16,5 @@ The *Timer-Triggered Loop* functionality offers a comprehensive toolset for musi
 
 The *KoalaGroove* repository houses the source code and documentation for the *KoalaGroove* looper pedal application. Developed with simplicity and functionality in mind, *KoalaGroove* empowers musicians to loop and layer their musical ideas effortlessly. Whether you're a beginner exploring musical concepts or a seasoned guitarist refining your skills, *KoalaGroove* offers an intuitive platform for creative expression and practice. Join our community of musicians, contribute to the project, and unlock the potential of your musical journey with *KoalaGroove*.
 
-![Koala With Guitar](koala_images/koala2.png)
+
+<img src="koala_images/koala2.png" alt="KoalaGroove Logo" width="300" height="300">
