@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="koala_images/koalaGroove.ico" type="image/x-icon">
+    <title>Koala Groove</title>
+</head>
+<!-- #fc5c65, #fd9644, #fed330, #26de81, #2bcbba, #778ca3, #d1d8e0,#a55eea -->
+<!-- colors from this website -->
+<!-- https://flatuicolors.com/palette/de -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.js"></script>
+<script src="scripts/sketch.js"></script>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+    <div>
+        <div class="parent" id="canvas-container"></div>
+    </div>
+
+    <div style="padding: 20px;">
+        <button class="random-color-button" style="background-color: #fc5c65;">Start
+            Recording</button>
+        <button class=" random-color-button" style="background-color:#a55eea;">Stop Recording</button>
+        <button class="random-color-button" style="background-color:  #2bcbba;">Play Recording</button>
+    </div>
+    <div style="padding: 20px;">
+        <p>This is a project where I hope to implement simple looper pedal. <br>
+            I was hoping to find some app online for my guitar practice and I was surprised not to find what I was
+            looking
+            for, not even behind a paywall.
+            So I desiced to write my own tool. <br>
+            I'm not professional musician and never saw a real looper pedal or any professional set up for this
+            purposein my life so I'm not even sure what exactly
+            the
+            standart functionality there is.
+            But on the other hand I have a clear vision for what are my personal needs are, with maybe few bells and
+            whistels down the line.
+            There are two approaches I see for this tool:<br>
+        <ul>
+            <li>Timer triggered loop</li>
+            <li>Loop by push of a button</li>
+        </ul>
+        <br>
+        <h4> Time Trigerred Loop</h4><br>
+        This is probably more functional loop tool, but it will require way more sophisticated knowlege in music theory.
+        <br>
+        It would probaly have to be tied to metronome, there should be some sort of set up for time signature.
+        The way I see should look something like this:<br>
+        <ul>
+            <li>I set up time signature, let's say 4/4 by default</li>
+            <li>I set up BPM, let's say 90</li>
+            <li>I set up the number of measures(or bars). Let's say 5</li>
+            <li>Maybe I need to set up timer before start, but this is optional, I can see 5 sec being default</li>
+            <li>I click "Start rectording"</li>
+            <li>I see a 5 second countdown, perhaps nicely visualised by a circle</li>
+            <li>When countdown stops, the recording begins</li>
+            <li>There should be visual cues where we are in the bar</li>
+            <li>Visual metronome sould be there as well tied to the bars</li>
+            <li>whenever the times ends, there should appear "Play/Pause" button and "Delete" button</li>
+            <li>Play would start the loop</li>
+            <li>Cool feature would be to be able to select a segment to play, let's say play just one selected bar, or
+                selected custom range</li>
+            <li>to be continued</li>
+        </ul>
+        Next time you are here, finish with your thoughts on Timer Looper, and write your vision for Button Looper.
+        Don't forget to think about multiple tracks.
+
+        AND THE MOST IMPORTANT - Figure out name!
+        KoalaGroove!!
+        </p>
+
+
+    </div>
+</body>

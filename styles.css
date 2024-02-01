@@ -1,0 +1,24 @@
+body,
+html {
+    background-color: #fd9644;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 50vh;
+}
+
+.random-color-button {
+
+    padding: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
