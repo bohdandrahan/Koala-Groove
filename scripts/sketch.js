@@ -1,4 +1,3 @@
-let mic;
 
 function setup() {
     let canvasContainer = document.getElementById('canvas-container');
@@ -9,12 +8,22 @@ function setup() {
 
 function draw() {
     background("#feca57")
-    // Your drawing logic (if needed)
+
+    translate(width / 2, height / 2);
+
+    // Rotate the canvas by radians
+    rotate(frameCount / 30);
+
+    // Set text properties
+    textAlign(CENTER, CENTER);
+    textSize(32);
+    fill('red');
+
+    // Display rotated text
+    text("Work in Progress", 0, 0);
 }
 
-function StartRecording(){
-    console.log('Start')
-    mic = new p5.AudioIn();
-    mic.start()
+function update() {
+
 }
 
