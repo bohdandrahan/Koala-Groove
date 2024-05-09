@@ -21,6 +21,7 @@ function setup() {
 
     button_minus_five = new My_Button('-5', width * 0.015, height * 0.7, width * 0.15, height * 0.1, -5)
     buttons.push(button_minus_five)
+
     button_minus_one = new My_Button('-1', width * 0.2, height * 0.7, width * 0.15, height * 0.1, -1)
     buttons.push(button_minus_one)
 
@@ -29,7 +30,6 @@ function setup() {
 
     button_plus_five = new My_Button('+5', width * (1 - 0.015 - 0.15), height * 0.7, width * 0.15, height * 0.1, +5)
     buttons.push(button_plus_five)
-
 }
 
 function draw() {
@@ -38,8 +38,10 @@ function draw() {
     background("#feca57")
     fill('#fd9644')
     stroke(0);
-    strokeWeight(3)
-    text('BPM:' + bpm, width / 2, height * 0.74);
+    strokeWeight(5)
+    textSize(85)
+    text(bpm, width / 2, height * 0.74);
+    textSize(32)
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].draw()
@@ -80,6 +82,7 @@ class My_Button {
         this.jump()
 
     }
+
     jump() {
         if (this.isJumped) {
             this.isJumped = false
@@ -99,6 +102,7 @@ class My_Button {
             console.log('while')
             this.color = this.potential_colors[floor(random(this.potential_colors.length))]
         }
+        this.secondary_color = this.potential_colors[floor(random(this.potential_colors.length))]
     }
     updateBpm() {
         bpmSlider.value(bpmSlider.value() + this.bpm_increment)
@@ -120,7 +124,7 @@ class My_Button {
         fill(this.color);
         rect(this.x, this.y, this.w, this.h, 10);
 
-        fill('#fd9644')
+        fill(this.secondary_color)
         text(this.name, this.x + this.w / 2, this.y + this.h / 2)
     }
 }

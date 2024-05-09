@@ -1,4 +1,3 @@
-
 function setup() {
     let canvasContainer = document.getElementById('canvas-container');
     let containerWidth = canvasContainer.offsetWidth;
